@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Amara Aesthetics & Wellness – Illuminate Your Beauty</title>
+  <meta name="description" content="RN-led medspa in Oakland: HIFU face & body tightening, intimate wellness, and clinical aesthetic protocols."/>
+  <style>
+    :root { --gold:#B08D57; --deepgold:#7A5A2A; --black:#000; --white:#fff; --muted:rgba(255,255,255,.75); }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;height:100%}
+    body{
+      background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,.95) 35%, rgba(122,90,42,.25) 85%, rgba(122,90,42,.35) 100%), var(--black);
+      color:var(--white); font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    a{color:var(--gold);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:1120px;margin:0 auto;padding:0 1.25rem}
+    .header{position:sticky;top:0;z-index:50;backdrop-filter:blur(8px);background:rgba(0,0,0,.7);border-bottom:1px solid rgba(255,255,255,.1)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+    .brand{display:flex;align-items:center;gap:.8rem}
+    .brand-box{height:48px;width:48px;border-radius:10px;background:#000;border:1px solid rgba(255,255,255,.12)}
+    .brand-title{line-height:1}
+    .brand-title .line1{font-weight:700;letter-spacing:.08em}
+    .brand-title .line2{font-size:.7rem;letter-spacing:.25em;color:var(--gold);text-transform:uppercase}
+    .nav a{color:#fff;opacity:.92;margin-left:1rem;font-size:.95rem}
+    .nav a:hover{color:var(--gold);opacity:1}
+    .btn{display:inline-block;border-radius:999px;padding:.85rem 1.2rem;border:1px solid var(--gold);color:var(--gold);transition:.15s;}
+    .btn:hover{background:var(--gold);color:#000;transform:translateY(-2px)}
+    .btn-solid{background:var(--gold);color:#000;border-color:var(--gold)}
+    .hero{position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(60% 50% at 70% 10%, rgba(176,141,87,.18), transparent);}
+    .hero-inner{display:grid;grid-template-columns:1fr;gap:2rem;padding:4rem 0 3rem}
+    @media(min-width:900px){.hero-inner{grid-template-columns:1.1fr .9fr;padding:6rem 0 4rem}}
+    .hero h1{font-size:2.6rem;margin:0} @media(min-width:900px){.hero h1{font-size:3.2rem}}
+    .hero p{color:var(--muted);max-width:36rem}
+    .hero-card{position:relative;height:18rem;border-radius:20px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55)}
+    @media(min-width:900px){.hero-card{height:28rem}}
+    .section{padding:3.5rem 0}
+    .section h2{margin:0;font-size:1.9rem}
+    .section p.lead{color:var(--muted);margin-top:.5rem}
+    .cards{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1.5rem}
+    @media(min-width:900px){.cards{grid-template-columns:repeat(3,1fr);gap:1.25rem}}
+    .card{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.07);border-radius:18px;padding:1.25rem}
+    .card h3{color:var(--gold);margin:0 0 .25rem 0;font-size:1.05rem}
+    .card ul{margin:.6rem 0 0;padding-left:1.1rem;color:rgba(255,255,255,.8)} .card li{margin:.2rem 0}
+    .grid-2{display:grid;grid-template-columns:1fr;gap:1.25rem}
+    @media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}}
+    .photo{aspect-ratio:4/3;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55);font-size:.8rem}
+    .pricing .price{font-size:1.6rem;font-weight:700;margin-top:.25rem}
+    .expect{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.07);border-radius:18px;padding:1.25rem}
+    .form{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);border-radius:18px;padding:1.25rem;display:grid;gap:.75rem}
+    .form input,.form select,.form textarea{width:100%;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:.9rem 1rem;color:#fff;outline:none;font-size:.95rem}
+    .form input:focus,.form select:focus,.form textarea:focus{border-color:var(--gold)}
+    .footer{border-top:1px solid rgba(255,255,255,.12)}
+    .footer-inner{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:1rem 0;color:rgba(255,255,255,.7);font-size:.95rem;flex-wrap:wrap}
+    .footer a{color:rgba(255,255,255,.8)} .footer a:hover{color:#fff}
+    .small{font-size:.85rem;color:rgba(255,255,255,.6)}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-box"></div>
+        <div class="brand-title">
+          <div class="line1">AMARA</div>
+          <div class="line2">Aesthetics & Wellness</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#results">Results</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://squareup.com/appointments/book/amaraaesthetics" target="_blank" rel="noopener" class="btn">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Illuminate Your Beauty</h1>
+          <p>Evidence-informed medspa care in Oakland. Non-invasive tightening, sculpting, and intimate wellness using next-gen HIFU and clinical protocols.</p>
+          <div style="margin-top:1rem; display:flex; gap:.6rem; flex-wrap:wrap;">
+            <a href="https://squareup.com/appointments/book/amaraaesthetics" target="_blank" rel="noopener" class="btn btn-solid">Book a Consultation</a>
+            <a href="#services" class="btn">Explore Services</a>
+          </div>
+          <div class="small" style="margin-top:.75rem;">RN-led • Appointment only • East Bay</div>
+        </div>
+        <div class="hero-card">Add your hero image here</div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Signature Services</h2>
+        <p class="lead">Customized plans. Visible results. Minimal downtime.</p>
+        <div class="cards">
+          <div class="card">
+            <h3>HIFU Face Lifting</h3>
+            <p>Tighten jawline, lift cheeks, smooth lines with multi-depth ultrasound energy (1.5–4.5mm).</p>
+            <ul><li>Lower face sculpting</li><li>Brow & eye lift</li><li>Neck tightening</li></ul>
+          </div>
+          <div class="card">
+            <h3>HIFU Body Contouring</h3>
+            <p>Target stubborn areas with body-depth cartridges (8–18mm) for a firmer silhouette.</p>
+            <ul><li>Abdomen & flanks</li><li>Thighs & arms</li><li>Back & bra line</li></ul>
+          </div>
+          <div class="card">
+            <h3>Vaginal HIFU Wellness</h3>
+            <p>Support tissue tone and intimate wellness with focused protocols and RN oversight.</p>
+            <ul><li>Tone & support</li><li>Pelvic wellness focus</li><li>Discreet & dignified care</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Before & After</h2>
+          <p class="lead">Photos representative; individual results vary. Consistent lighting and angles are used for accuracy.</p>
+          <div class="small" style="margin-top:.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+            <span>Consent on file</span><span>HIPAA-aware workflows</span><span>No surgery • No downtime</span>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="photo">Add photo</div>
+          <div class="photo">Add photo</div>
+          <div class="photo">Add photo</div>
+          <div class="photo">Add photo</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section pricing">
+      <div class="container">
+        <h2>Pricing</h2>
+        <p class="lead">Transparent tiers. Packages available after consultation.</p>
+        <div class="cards">
+          <div class="card">
+            <div style="color: var(--gold); font-weight:600;">Face Starter</div>
+            <div class="price">$395–$695</div>
+            <ul><li>Lower face or brow focus</li><li>45–60 min</li><li>Includes post-care kit</li></ul>
+            <a class="btn btn-solid" href="https://squareup.com/appointments/book/amaraaesthetics" target="_blank" rel="noopener">Book Now</a>
+          </div>
+          <div class="card">
+            <div style="color: var(--gold); font-weight:600;">Body Zone</div>
+            <div class="price">$495–$895</div>
+            <ul><li>One body area</li><li>60–90 min</li><li>Lines/shots customized</li></ul>
+            <a class="btn btn-solid" href="https://squareup.com/appointments/book/amaraaesthetics" target="_blank" rel="noopener">Book Now</a>
+          </div>
+          <div class="card">
+            <div style="color: var(--gold); font-weight:600;">Intimate Wellness</div>
+            <div class="price">$595–$995</div>
+            <ul><li>Vaginal HIFU protocol</li><li>RN consultation</li><li>Private care plan</li></ul>
+            <a class="btn btn-solid" href="https://squareup.com/appointments/book/amaraaesthetics" target="_blank" rel="noopener">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>About Amara</h2>
+          <p class="lead">RN-led medspa blending clinical standards with luxury care. We use ultrasound depth mapping, photography protocols, and documented outcomes to help ensure safety and results.</p>
+          <ul>
+            <li>Consult-to-Care plan with honest expectations</li>
+            <li>Contraindication screening and informed consent</li>
+            <li>Measurement, photography, and follow-up touchpoints</li>
+          </ul>
+        </div>
+        <div class="expect">
+          <h3 style="color: var(--gold); margin:0;">What to Expect</h3>
+          <ol>
+            <li>Consultation & medical history review</li>
+            <li>Photography + baselines (cm/inches)</li>
+            <li>Custom HIFU protocol (depths & energy)</li>
+            <li>Post-care, hydration, and follow-up schedule</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Contact</h2>
+          <p class="lead">Oakland, CA • By appointment</p>
+          <div class="small" style="margin-top:.5rem;">
+            Phone: <span style="color: var(--gold);">(510) 000-0000</span><br/>
+            Email: <a href="mailto:amaraaestheticswellness@gmail.com" style="color: var(--gold);">amaraaestheticswellness@gmail.com</a>
+          </div>
+          <div style="margin-top:1rem;">
+            <a class="btn btn-solid" href="https://squareup.com/appointments/book/amaraaesthetics" target="_blank" rel="noopener">Schedule Consultation</a>
+          </div>
+          <p class="small" style="margin-top:1rem;">This site is informational and not a substitute for medical advice. Results vary. Contraindications apply.</p>
+        </div>
+
+        <!-- Netlify Forms -->
+        <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="contact" />
+          <p style="display:none;"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
+          <input name="name" placeholder="Full name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input name="phone" placeholder="Phone" />
+          <select name="service">
+            <option>Service interest</option><option>HIFU Face</option><option>HIFU Body</option><option>Vaginal HIFU</option>
+          </select>
+          <textarea rows="4" name="message" placeholder="Your goals"></textarea>
+          <button class="btn btn-solid" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="y"></span> Amara Aesthetics & Wellness · <a href="mailto:amaraaestheticswellness@gmail.com">amaraaestheticswellness@gmail.com</a></div>
+      <div style="display:flex; gap:1rem;">
+        <a href="#">Privacy Policy</a><a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
