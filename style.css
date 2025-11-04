@@ -1,13 +1,13 @@
-/* ===== Debonair Black & Gold Pack ===== */
+/* ===== Debonair Black & Gold Theme ===== */
 :root{
   --bg:#050505;
   --ink:#f5f5f5;
   --muted:#cfcfcf;
   --line:rgba(255,255,255,.12);
   --card:rgba(255,255,255,.06);
-  --gold:#B08D57;         /* soft metallic */
-  --gold-2:#8F6B3A;       /* deep gold */
-  --shadow:0 10px 30px rgba(0,0,0,.45);
+  --gold:#B08D57;     /* soft metallic */
+  --gold-2:#8F6B3A;   /* deeper gold */
+  --shadow:0 12px 30px rgba(0,0,0,.45);
 }
 
 *{box-sizing:border-box}
@@ -15,86 +15,112 @@ html,body{margin:0}
 body{
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(176,141,87,.16), transparent 60%),
-    linear-gradient(180deg, #0b0b0b 0%, #070707 60%, #0a0907 100%);
+    radial-gradient(1100px 520px at 85% -10%, rgba(176,141,87,.18), transparent 60%),
+    linear-gradient(180deg, #0c0c0c 0%, #080808 60%, #0a0907 100%);
   color:var(--ink);
 }
 
-/* Header / Nav */
-header{
-  position:sticky; top:0; z-index:50;
-  background:rgba(0,0,0,.72);
+/* Containers */
+.container{max-width:1060px;margin:0 auto;padding:0 20px}
+
+/* Header */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(0,0,0,.7);
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);
-  padding:14px 18px;
 }
-header .brand{
-  font-family: "Playfair Display", serif;
-  letter-spacing:.06em; font-weight:700; font-size:22px;
+.header-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 0;
 }
-nav{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
-nav a{
-  color:#e7e7e7; text-decoration:none; font-weight:600;
-  border-bottom:2px solid transparent; padding-bottom:2px;
+.brand{display:flex;align-items:center;gap:10px}
+.brand-mark{
+  height:36px;width:36px;border-radius:999px;display:grid;place-items:center;
+  background: radial-gradient(70% 70% at 30% 30%, var(--gold) 0%, var(--gold-2) 65%, #2a2116 100%);
+  color:#000;font-weight:800
 }
-nav a:hover{color:var(--gold); border-bottom-color:var(--gold)}
-nav a.btn, .btn{
-  display:inline-block; text-decoration:none;
-  background:linear-gradient(135deg, var(--gold), var(--gold-2));
-  color:#000; font-weight:700; padding:10px 16px; border-radius:999px;
-  box-shadow:var(--shadow);
+.brand-text{line-height:1}
+.brand-title{
+  font-family:"Playfair Display", serif;font-size:20px;font-weight:700;letter-spacing:.08em
 }
-nav a.btn:hover, .btn:hover{filter:brightness(1.06); transform:translateY(-1px)}
-.btn.outline{
-  background:transparent; color:var(--gold); border:1px solid var(--gold);
+.brand-sub{
+  font-size:12px;color:var(--gold);letter-spacing:.2em;text-transform:uppercase;margin-top:2px
 }
 
-/* Containers */
-.container{max-width:1060px; margin:0 auto; padding:24px}
+.nav{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.nav a{
+  color:#e7e7e7;text-decoration:none;font-weight:600;border-bottom:2px solid transparent;padding-bottom:2px
+}
+.nav a:hover,.nav a.active{color:var(--gold);border-bottom-color:var(--gold)}
+.nav .btn{
+  background:linear-gradient(135deg, var(--gold), var(--gold-2));
+  color:#000;font-weight:700;padding:10px 16px;border-radius:999px;box-shadow:var(--shadow)
+}
+.nav .btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
 
 /* Hero */
 .hero{
-  padding:72px 24px 48px;
-  background:
-    radial-gradient(800px 400px at 15% 0%, rgba(176,141,87,.14), transparent 60%),
-    linear-gradient(180deg, rgba(255,255,255,.04), transparent 60%);
   border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(800px 380px at 15% 0%, rgba(176,141,87,.14), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.05), transparent 60%);
+  padding:72px 0 48px;
 }
 h1{
   font-family:"Playfair Display", serif;
-  font-size:42px; line-height:1.1; margin:0 0 10px;
-  letter-spacing:.01em;
+  font-size:42px;line-height:1.1;margin:0 0 10px;letter-spacing:.01em
 }
-.hero p{color:var(--muted); max-width:680px; margin:0 0 18px}
+.lead{color:var(--muted);max-width:680px;margin:0 0 18px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.btn, .btn.outline{
+  display:inline-block;text-decoration:none;border-radius:999px;transition:all .18s ease
+}
+.btn{
+  background:linear-gradient(135deg, var(--gold), var(--gold-2));
+  color:#000;font-weight:700;padding:10px 16px;box-shadow:var(--shadow)
+}
+.btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.btn.outline{background:transparent;color:var(--gold);border:1px solid var(--gold);padding:10px 16px}
+.btn.outline:hover{background:rgba(176,141,87,.08)}
 
-/* Section headings */
+/* Content */
+.content{padding:32px 0}
 h2{
-  font-family:"Playfair Display", serif;
-  font-size:28px; margin:10px 0 12px;
-  position:relative; display:inline-block;
+  font-family:"Playfair Display", serif;font-size:28px;margin:8px 0 14px;position:relative;display:inline-block
 }
 h2::after{
-  content:""; position:absolute; left:0; right:-8px; bottom:-6px; height:2px;
-  background:linear-gradient(90deg, var(--gold), transparent 80%);
+  content:"";position:absolute;left:0;right:-10px;bottom:-6px;height:2px;
+  background:linear-gradient(90deg, var(--gold), transparent 80%)
 }
 
-/* Grid & Cards */
+/* Grid & cards */
 .grid{display:grid;gap:16px}
 .grid.two{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .card{
   background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
-  border:1px solid var(--line); border-radius:16px; padding:16px;
-  box-shadow:var(--shadow);
+  border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)
 }
-.card strong{color:#fff}
 .card h3{
-  margin:0 0 8px; color:var(--gold); font-family:"Playfair Display", serif; font-size:20px;
+  margin:0 0 6px;color:var(--gold);font-family:"Playfair Display", serif;font-size:20px
 }
+.card p{margin:0 0 10px;color:#eaeaea}
+.link{color:#f0e2c8;text-decoration:none}
+.link:hover{color:#fff}
 
-/* Utility */
-a{transition:all .18s ease}
-footer{
-  border-top:1px solid var(--line); color:#bababa; text-align:center;
-  padding:22px; margin-top:40px;
+/* Footer */
+.site-footer{
+  border-top:1px solid var(--line);color:#cfcfcf
 }
-.hero .btns{display:flex; gap:12px; flex-wrap:wrap; margin-top:8px}
+.footer-row{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0
+}
+.footer-links{display:flex;gap:16px}
+.footer-links a{color:#cfcfcf;text-decoration:none}
+.footer-links a:hover{color:#fff}
+
+/* Responsive tweaks */
+@media (max-width: 720px){
+  h1{font-size:34px}
+  .brand-sub{display:none}
+}
