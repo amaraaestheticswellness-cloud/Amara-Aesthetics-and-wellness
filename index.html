@@ -2,73 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Amara Aesthetics & Wellness</title>
+
+  <!-- Elegant fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<header>
-  <h2>AMARA Aesthetics & Wellness</h2>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="before-after.html">Before & After</a>
-    <a href="about.html">About</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="contact.html">Contact</a>
-    <a href="book.html" class="btn">Book Now</a>
-  </nav>
-</header>
-
-<main class="container">
-
-  <section class="hero">
-    <h1>Illuminate Your Beauty</h1>
-    <p>Providing safe, natural, and personalized aesthetic care to enhance your confidence.</p>
-    <p>
-      <a class="btn fill" href="book.html">Book an Appointment</a>
-    </p>
-  </section>
-
-  <section>
-    <h2>Popular Services</h2>
-    <div class="grid two">
-
-      <div class="card">
-        <strong>Skin Tightening (HIFU)</strong><br />
-        Targeted lift & contour.
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">A</div>
+        <div class="brand-text">
+          <div class="brand-title">AMARA</div>
+          <div class="brand-sub">Aesthetics & Wellness</div>
+        </div>
       </div>
-
-      <div class="card">
-        <strong>Body Sculpting</strong><br />
-        Non-invasive shaping.
-      </div>
-
-      <div class="card">
-        <strong>RF Microneedling</strong><br />
-        Texture & collagen boost.
-      </div>
-
-      <div class="card">
-        <strong>Glow Facials</strong><br />
-        Instant radiance refresh.
-      </div>
-
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="before-after.html">Before & After</a>
+        <a href="about.html">About</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+        <a href="book.html" class="btn">Book Now</a>
+      </nav>
     </div>
+  </header>
 
-    <p style="margin-top: 12px;">
-      <a class="btn" href="services.html">See All Services</a>
-    </p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Illuminate Your Beauty</h1>
+      <p class="lead">
+        Providing safe, natural, and personalized aesthetic care to enhance your confidence.
+      </p>
+      <div class="btns">
+        <a class="btn" href="book.html">Book an Appointment</a>
+        <a class="btn outline" href="services.html">Explore Services</a>
+      </div>
+    </div>
   </section>
 
-</main>
+  <!-- SIGNATURE SERVICES -->
+  <main class="container content">
+    <section>
+      <h2>Popular Services</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>Skin Tightening (HIFU)</h3>
+          <p>Targeted lift & contour with multi-depth energy.</p>
+          <a class="link" href="services.html">Learn more →</a>
+        </article>
+        <article class="card">
+          <h3>Body Sculpting</h3>
+          <p>Non-invasive shaping for abdomen, flanks, arms & thighs.</p>
+          <a class="link" href="services.html">Learn more →</a>
+        </article>
+        <article class="card">
+          <h3>RF Microneedling</h3>
+          <p>Smoother texture and collagen remodeling.</p>
+          <a class="link" href="services.html">Learn more →</a>
+        </article>
+        <article class="card">
+          <h3>Glow Facials</h3>
+          <p>Hydration and brightness for instant radiance.</p>
+          <a class="link" href="services.html">Learn more →</a>
+        </article>
+      </div>
+      <p class="section-cta">
+        <a class="btn outline" href="pricing.html">View Pricing</a>
+      </p>
+    </section>
+  </main>
 
-<footer class="container">
-  © 2025 Amara Aesthetics & Wellness • <a href="contact.html">Get in touch</a>
-</footer>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© 2025 Amara Aesthetics & Wellness</div>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
