@@ -1,94 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | AMARA Aesthetics & Wellness</title>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services • Amara</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-  <h2>AMARA Aesthetics & Wellness</h2>
-  <nav>
-    <a href="index.html">Home</a>
-    <a class="active" href="services.html">Services</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="before-after.html">Before & After</a>
-    <a href="about.html">About</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="contact.html">Contact</a>
-    <a href="book.html" class="btn">Book Now</a>
-  </nav>
-</header>
+<header class="site-header"><div class="container header-row">
+  <div class="brand"><img src="logo.png" class="logo" alt=""><div class="brand-text"><div class="brand-title">AMARA</div><div class="brand-sub">Aesthetics & Wellness</div></div></div>
+  <nav class="nav"><a href="index.html">Home</a><a class="active" href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="before-after.html">Before & After</a><a href="about.html">About</a><a href="testimonials.html">Testimonials</a><a href="contact.html">Contact</a><a href="book.html" class="btn">Book Now</a></nav>
+</div></header>
 
-<main class="container">
-  <section class="hero-mini">
-    <h1>Services</h1>
-    <p>RN-led medspa care with safety, evidence, and beautiful results.</p>
-  </section>
+<main class="container content">
+  <h1>Services</h1>
+  <p class="lead">Safety-first care, honest expectations, and documented outcomes. Every service includes screening, consent, photos, and after-care.</p>
 
-  <section class="grid-2">
+  <div class="grid two" id="hifu">
     <article class="card">
-      <h3>Consultation</h3>
-      <p>15–30 min virtual or in-studio consult. Skin goals, health history,
-      contraindication screening, photos, and a personalized care plan.</p>
-      <a href="book.html" class="btn">Book Consult</a>
+      <h3>HIFU Skin Tightening</h3>
+      <p>Multi-depth energy (1.5–4.5mm face; 6–18mm body) to lift and firm without surgery.</p>
+      <ul><li>Lower face & jawline</li><li>Full face & neck</li><li>Abdomen, flanks, arms, thighs</li></ul>
+      <a class="btn outline" href="book.html">Book HIFU</a>
     </article>
 
-    <article class="card">
-      <h3>Ultrasound-Guided Injectable Safety Check</h3>
-      <p>Depth mapping and vascular awareness for safer filler planning or
-      complication evaluation (RN/NP-led; non-diagnostic).</p>
-      <a href="book.html" class="btn">Book</a>
+    <article class="card" id="body">
+      <h3>Body Sculpting</h3>
+      <p>Target stubborn areas with tailored grids, baseline measurements, and staged follow-ups.</p>
+      <ul><li>Abdomen & waist</li><li>Arms & thighs</li><li>Bra line & back</li></ul>
+      <a class="btn outline" href="book.html">Book Sculpt</a>
     </article>
 
-    <article class="card">
-      <h3>Neuromodulators (Botox/Jeuveau/Daxxify)</h3>
-      <ul>
-        <li>Forehead, frown, crow’s feet, brow lift</li>
-        <li>Masseter/jawline, lip flip, bunny lines, chin</li>
-        <li>Hyperhidrosis (underarms, hands)</li>
-      </ul>
-      <a href="book.html" class="btn">Book</a>
+    <article class="card" id="rf">
+      <h3>RF Microneedling</h3>
+      <p>Texture, pores, fine lines, and scars; improves tone via collagen remodeling.</p>
+      <ul><li>Comfort measures available</li><li>Series planning</li><li>After-care included</li></ul>
+      <a class="btn outline" href="book.html">Book RF</a>
     </article>
 
-    <article class="card">
-      <h3>Dermal Fillers</h3>
-      <ul>
-        <li>Lips (shape + hydration)</li>
-        <li>Cheeks, chin, jawline contour</li>
-        <li>Tear trough (assessment for candidacy)</li>
-      </ul>
-      <a href="book.html" class="btn">Book</a>
+    <article class="card" id="facials">
+      <h3>Glow Facials & Peels</h3>
+      <p>Hydration, acne/texture balancing, and brightening peels customized to your skin.</p>
+      <ul><li>Hydra glow</li><li>Acne/texture protocol</li><li>Brightening/TCA blend peels</li></ul>
+      <a class="btn outline" href="book.html">Book Skin</a>
     </article>
-
-    <article class="card">
-      <h3>Skin Tightening (HIFU)</h3>
-      <p>Non-surgical lifting for face, neck, or body using 4D/7D/22D
-      technology options. Custom depth & grid based on your goals.</p>
-      <a href="book.html" class="btn">Book</a>
-    </article>
-
-    <article class="card">
-      <h3>Medical-Grade Facials & Peels</h3>
-      <ul>
-        <li>Hydrating glow facial</li>
-        <li>Acne/texture protocol</li>
-        <li>Brightening/TCA blend peels</li>
-      </ul>
-      <a href="book.html" class="btn">Book</a>
-    </article>
-  </section>
+  </div>
 
   <section class="notice">
-    <p><strong>Clinical notes:</strong> All services include screening, photos,
-    informed consent, and post-care. Some treatments require medical clearance or
-    are not suitable in pregnancy/breastfeeding or certain conditions.</p>
+    <p><strong>Notes:</strong> Not suitable in pregnancy/breastfeeding or certain conditions. Some treatments may require medical clearance.</p>
   </section>
 </main>
 
-<footer>
-  <p>© 2025 Amara Aesthetics & Wellness</p>
-</footer>
+<footer class="site-footer"><div class="container footer-row"><div>© 2025 Amara Aesthetics & Wellness</div></div></footer>
 </body>
 </html>
