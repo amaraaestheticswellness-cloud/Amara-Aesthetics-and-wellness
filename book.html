@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Now | AMARA Aesthetics & Wellness</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h2>AMARA Aesthetics & Wellness</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="before-after.html">Before & After</a>
+    <a href="about.html">About</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn active" href="book.html">Book Now</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero-mini">
+    <h1>Book Your Appointment</h1>
+    <p>Choose online booking or send a quick request. We’ll confirm by email/text.</p>
+  </section>
+
+  <!-- A) External scheduler button (update the href to your real link) -->
+  <section class="card">
+    <h3>Instant Online Booking</h3>
+    <p>Reserve your time in under a minute.</p>
+    <a class="btn-lg" href="https://calendly.com/" target="_blank" rel="noopener">
+      Open Online Scheduler
+    </a>
+    <p class="muted">Prefer a different system? We support GlossGenius, Square, or Vagaro—just swap the link.</p>
+  </section>
+
+  <!-- B) Netlify appointment request form -->
+  <section class="card">
+    <h3>Request an Appointment</h3>
+    <form name="appointment" method="POST" data-netlify="true" action="thank-you.html">
+      <input type="hidden" name="form-name" value="appointment" />
+      <div class="grid-2">
+        <label>Full Name
+          <input type="text" name="name" required />
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" required />
+        </label>
+        <label>Email
+          <input type="email" name="email" required />
+        </label>
+        <label>Preferred Date
+          <input type="date" name="date" />
+        </label>
+      </div>
+      <label>Service of Interest
+        <select name="service">
+          <option>Consultation</option>
+          <option>Neuromodulators</option>
+          <option>Dermal Filler</option>
+          <option>HIFU Skin Tightening</option>
+          <option>Medical-Grade Facial/Peel</option>
+          <option>Ultrasound Safety Check</option>
+        </select>
+      </label>
+      <label>Notes / Goals
+        <textarea name="notes" rows="4" placeholder="Share your skin goals, allergies, or questions."></textarea>
+      </label>
+      <button type="submit" class="btn-lg">Send Request</button>
+      <p class="muted">By requesting, you agree to our clinic policies and consent forms during intake.</p>
+    </form>
+  </section>
+
+  <section class="notice">
+    <p><strong>Tip:</strong> For faster confirmation, book directly via the online scheduler above.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Amara Aesthetics & Wellness</p>
+</footer>
+</body>
+</html>
